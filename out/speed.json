@@ -1,0 +1,133 @@
+{
+ "times": {
+  "label p1": {
+   "workers": 1,
+   "parts": 324,
+   "seconds": 308,
+   "per_contract": 30.8
+  },
+  "label p4": {
+   "workers": 4,
+   "parts": 324,
+   "seconds": 230,
+   "per_contract": 23.0
+  },
+  "label p8": {
+   "workers": 8,
+   "parts": 324,
+   "seconds": 219,
+   "per_contract": 21.9
+  },
+  "label small": {
+   "workers": 8,
+   "parts": 324,
+   "seconds": 29,
+   "per_contract": 2.9
+  }
+ },
+ "labels same as first run": {
+  "p1": "324 of 324",
+  "p4": "231 of 324",
+  "p8": "218 of 324",
+  "small": "2 of 324"
+ },
+ "routes": {
+  "first": {
+   "questions": 410,
+   "s_per_q": 1.27,
+   "same 4 parts as first run": 410,
+   "hit": 0.951,
+   "span": 0.895
+  },
+  "p8fast": {
+   "questions": 410,
+   "s_per_q": 0.78,
+   "same 4 parts as first run": 141,
+   "hit": 0.935,
+   "span": 0.891
+  },
+  "r4": {
+   "questions": 410,
+   "s_per_q": 1.0,
+   "same 4 parts as first run": 196,
+   "hit": 0.951,
+   "span": 0.891
+  },
+  "r4fast": {
+   "questions": 410,
+   "s_per_q": 0.77,
+   "same 4 parts as first run": 200,
+   "hit": 0.951,
+   "span": 0.891
+  },
+  "small4": {
+   "questions": 410,
+   "s_per_q": 1.0,
+   "same 4 parts as first run": 20,
+   "hit": 0.878,
+   "span": 0.79
+  }
+ },
+ "answers": [
+  {
+   "mode": "sp_p8fast",
+   "questions": 410,
+   "with_answer": 123,
+   "passage_recall": 0.935,
+   "found_precision": 0.646,
+   "found_recall": 0.919,
+   "found_f1": 0.758,
+   "quote_precision": 0.445,
+   "clause_recall": 0.819,
+   "quotes_verbatim": 0.951,
+   "sec_per_q": 1.88,
+   "prompt_tokens": 1208,
+   "bad_json": 5
+  },
+  {
+   "mode": "sp_r4",
+   "questions": 410,
+   "with_answer": 123,
+   "passage_recall": 0.951,
+   "found_precision": 0.644,
+   "found_recall": 0.943,
+   "found_f1": 0.766,
+   "quote_precision": 0.446,
+   "clause_recall": 0.823,
+   "quotes_verbatim": 0.946,
+   "sec_per_q": 3.02,
+   "prompt_tokens": 1214,
+   "bad_json": 3
+  },
+  {
+   "mode": "sp_r4fast",
+   "questions": 410,
+   "with_answer": 123,
+   "passage_recall": 0.951,
+   "found_precision": 0.648,
+   "found_recall": 0.943,
+   "found_f1": 0.768,
+   "quote_precision": 0.455,
+   "clause_recall": 0.819,
+   "quotes_verbatim": 0.948,
+   "sec_per_q": 1.86,
+   "prompt_tokens": 1218,
+   "bad_json": 2
+  },
+  {
+   "mode": "sp_small4",
+   "questions": 410,
+   "with_answer": 123,
+   "passage_recall": 0.878,
+   "found_precision": 0.655,
+   "found_recall": 0.894,
+   "found_f1": 0.756,
+   "quote_precision": 0.444,
+   "clause_recall": 0.718,
+   "quotes_verbatim": 0.973,
+   "sec_per_q": 2.94,
+   "prompt_tokens": 1183,
+   "bad_json": 4
+  }
+ ]
+}

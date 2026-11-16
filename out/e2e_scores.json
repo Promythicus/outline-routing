@@ -1,0 +1,62 @@
+[
+ {
+  "mode": "fused12",
+  "questions": 410,
+  "with_answer": 123,
+  "passage_recall": 0.951,
+  "found_precision": 0.61,
+  "found_recall": 0.927,
+  "found_f1": 0.735,
+  "quote_precision": 0.364,
+  "clause_recall": 0.77,
+  "quotes_verbatim": 0.948,
+  "sec_per_q": 3.27,
+  "prompt_tokens": 1236,
+  "bad_json": 3
+ },
+ {
+  "mode": "fused24",
+  "questions": 410,
+  "with_answer": 123,
+  "passage_recall": 0.967,
+  "found_precision": 0.631,
+  "found_recall": 0.919,
+  "found_f1": 0.748,
+  "quote_precision": 0.363,
+  "clause_recall": 0.77,
+  "quotes_verbatim": 0.931,
+  "sec_per_q": 4.05,
+  "prompt_tokens": 2303,
+  "bad_json": 6
+ },
+ {
+  "mode": "parts4",
+  "questions": 410,
+  "with_answer": 123,
+  "passage_recall": 0.951,
+  "found_precision": 0.626,
+  "found_recall": 0.927,
+  "found_f1": 0.748,
+  "quote_precision": 0.418,
+  "clause_recall": 0.806,
+  "quotes_verbatim": 0.949,
+  "sec_per_q": 2.98,
+  "prompt_tokens": 1203,
+  "bad_json": 1
+ },
+ {
+  "mode": "parts8",
+  "questions": 410,
+  "with_answer": 123,
+  "passage_recall": 0.976,
+  "found_precision": 0.659,
+  "found_recall": 0.927,
+  "found_f1": 0.77,
+  "quote_precision": 0.433,
+  "clause_recall": 0.819,
+  "quotes_verbatim": 0.94,
+  "sec_per_q": 3.57,
+  "prompt_tokens": 2055,
+  "bad_json": 6
+ }
+]

@@ -1,0 +1,26 @@
+{
+ "label p1": {
+  "workers": 1,
+  "parts": 324,
+  "seconds": 308,
+  "per_contract": 30.8
+ },
+ "label p4": {
+  "workers": 4,
+  "parts": 324,
+  "seconds": 230,
+  "per_contract": 23.0
+ },
+ "label p8": {
+  "workers": 8,
+  "parts": 324,
+  "seconds": 219,
+  "per_contract": 21.9
+ },
+ "label small": {
+  "workers": 8,
+  "parts": 324,
+  "seconds": 29,
+  "per_contract": 2.9
+ }
+}

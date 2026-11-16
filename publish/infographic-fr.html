@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><style>
+@font-face{font-family:Archivo;src:url(https://promythicus.com/assets/fonts/Archivo-latin.woff2) format("woff2");font-weight:100 900}
+@font-face{font-family:Mono;src:url(https://promythicus.com/assets/fonts/AtkinsonHyperlegibleMono-latin.woff2) format("woff2");font-weight:200 800}
+*{margin:0;box-sizing:border-box}body{width:1080px;height:1350px;background:#000;color:#fff;font-family:Archivo,Arial,sans-serif;padding:64px 64px 0;position:relative}
+.k{font:400 15px Mono,monospace;letter-spacing:.14em;text-transform:uppercase;color:#ff4a1c}
+h1{font-size:62px;line-height:1.02;letter-spacing:-.03em;font-weight:640;margin:16px 0 14px}
+.sub{font-size:21px;line-height:1.4;color:#cfcfcf;max-width:900px}
+h2{font-size:25px;letter-spacing:-.01em;font-weight:620;margin:38px 0 4px}
+.take{margin-top:30px;padding-left:20px;border-left:2px solid #ff4a1c;font-size:23px;line-height:1.4;max-width:900px}
+.cap{font:400 14px Mono,monospace;color:#8d8d8d;margin-bottom:16px}
+.row{display:grid;grid-template-columns:330px 470px;align-items:center;height:42px;font-size:18.5px;color:#dedede}
+.bar{height:20px;background:#6f6f6f;border-radius:0 4px 4px 0;position:relative}
+.bar b{position:absolute;left:100%;margin-left:10px;top:-3px;font-weight:620;font-size:19px;color:#fff;white-space:nowrap}
+.hot .bar{background:#ff4a1c}.hot{color:#fff}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;border-top:1px solid #fff}
+.tiles div{padding:18px 18px 0 0;border-right:1px solid #2b2b2b}.tiles div+div{padding-left:18px}.tiles div:last-child{border:0}
+.tiles b{display:block;font-size:44px;letter-spacing:-.03em;font-weight:640}.tiles span{font-size:15.5px;line-height:1.35;color:#cfcfcf;display:block;margin-top:4px}
+.foot{position:absolute;left:64px;right:64px;bottom:40px;border-top:1px solid #2b2b2b;padding-top:16px;font:400 13.5px/1.5 Mono,monospace;color:#8d8d8d;display:flex;justify-content:space-between;gap:30px}
+.foot b{color:#fff;font-weight:400}
+.row{height:46px}.take{margin-top:40px}</style></head><body>
+<p class="k">Promythicus Tech · Recherche 02</p>
+<h1>Un plan du contrat<br>fait mieux que la recherche</h1>
+<p class="sub">L’IA écrit d’abord une ligne d’étiquette pour chaque partie du contrat. Pour une question, elle lit ce plan et choisit les parties à lire. Un poste de travail, une carte graphique de 16 Go, sans nuage.</p>
+
+<h2>Clauses marquées par les avocats que le modèle a citées</h2>
+<p class="cap">CUAD · 10 contrats · 410 questions · 248 clauses marquées</p>
+<div class="row"><span>Meilleure recherche, puis lecture</span><div><div class="bar" style="width:70.6%"><b>71 %</b></div></div></div>
+<div class="row"><span>Recherche et plan ensemble</span><div><div class="bar" style="width:77.0%"><b>77 %</b></div></div></div>
+<div class="row hot"><span>Plan, puis lecture</span><div><div class="bar" style="width:80.6%"><b>81 % · lit 1/7 du texte</b></div></div></div>
+<div class="row"><span>Lecture du contrat entier</span><div><div class="bar" style="width:82.3%"><b>82 %</b></div></div></div>
+
+<h2>La bonne clause est-elle dans ce qui est lu?</h2>
+<p class="cap">30 contrats · 374 questions · environ 6 000 caractères lus (dernière ligne : 12 000)</p>
+<div class="row"><span>Meilleure recherche</span><div><div class="bar" style="width:86.6%"><b>87 %</b></div></div></div>
+<div class="row"><span>Plan</span><div><div class="bar" style="width:90.9%"><b>91 %</b></div></div></div>
+<div class="row"><span>Les deux ensemble</span><div><div class="bar" style="width:92.8%"><b>93 %</b></div></div></div>
+<div class="row hot"><span>Les deux, deux fois plus de lecture</span><div><div class="bar" style="width:96.5%"><b>97 %</b></div></div></div>
+
+<div class="tiles">
+<div><b>22 s</b><span>pour faire le plan d’un contrat, une fois, à son arrivée</span></div><div><b>2,7 s</b><span>par question, choix des parties et réponse</span></div><div><b>95 %</b><span>de citations mot pour mot (91&nbsp;% en lisant tout le contrat)</span></div><div><b>0</b><span>document sorti de la machine</span></div>
+</div>
+<p class="take">Une table des matières que le modèle écrit lui-même arrive à un point de la lecture complète, sur le septième du texte, sans entraînement.</p>
+<div class="foot"><span>Modèle : une variante à précision mixte de Qwen 3.8 27B qui tourne sur une seule carte graphique de 16 Go.<br>Idée d’après STAIR (arXiv 2609.03874). Données : CUAD v1 (CC BY 4.0). Notation maison; méthode au lien.</span><span><b>promythicus.com/blog</b></span></div>
+</body></html>

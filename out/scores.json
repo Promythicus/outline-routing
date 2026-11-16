@@ -1,0 +1,51 @@
+{
+ "contracts": 30,
+ "questions": 374,
+ "clauses": 820,
+ "route_seconds_per_question": 1.32,
+ "parts_named_mean": 6.6,
+ "rows": [
+  {
+   "method": "search",
+   "hit6k": 0.866,
+   "hit12k": 0.933,
+   "span6k": 0.698,
+   "span12k": 0.81
+  },
+  {
+   "method": "outline",
+   "hit6k": 0.909,
+   "hit12k": 0.939,
+   "span6k": 0.815,
+   "span12k": 0.863
+  },
+  {
+   "method": "within",
+   "hit6k": 0.898,
+   "hit12k": 0.933,
+   "span6k": 0.779,
+   "span12k": 0.86
+  },
+  {
+   "method": "fused",
+   "hit6k": 0.928,
+   "hit12k": 0.965,
+   "span6k": 0.811,
+   "span12k": 0.895
+  },
+  {
+   "method": "labelled",
+   "hit6k": 0.874,
+   "hit12k": 0.936,
+   "span6k": 0.754,
+   "span12k": 0.84
+  },
+  {
+   "method": "labelled+fused",
+   "hit6k": 0.925,
+   "hit12k": 0.96,
+   "span6k": 0.812,
+   "span12k": 0.884
+  }
+ ]
+}

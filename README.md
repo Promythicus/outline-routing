@@ -1,6 +1,6 @@
 # 02. Routing by an outline of the contract
 
-**Promythicus Tech research.** Write-up for a general reader: [promythicus.com/blog/contract-outline-beats-search-local-ai-test/](https://promythicus.com/blog/contract-outline-beats-search-local-ai-test/)
+**Promythicus research. Author: Bardia Shahrestani.** Write-up for a general reader: [promythicus.com/blog/contract-outline-beats-search-local-ai-test/](https://promythicus.com/blog/contract-outline-beats-search-local-ai-test/)
 
 <a href="https://promythicus.com/blog/contract-outline-beats-search-local-ai-test/"><img src="publish/infographic.png" alt="Summary of the results" width="540"></a>
 
@@ -105,7 +105,7 @@ for later). Article in the site repo, `posts_research.py`, key `research02`.
 
 ## Licence
 
-Code and write-ups: Apache-2.0, copyright 2026 Promythicus Tech Inc. Result files that quote dataset text keep the
+Code and write-ups: Apache-2.0, copyright 2026 Promythicus Tech Inc. Author: Bardia Shahrestani. Result files that quote dataset text keep the
 dataset's licence (CUAD: CC BY 4.0, The Atticus Project).
 
 One run of each, our own scoring: these numbers cannot be set beside published benchmarks. Corrections are welcome:

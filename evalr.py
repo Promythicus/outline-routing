@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Scores for experiment 02, on the sampled contracts, at reading budgets of 6,000 and 12,000 characters.
-   search      experiment 01's best search (500-character passages, Qwen3 embedder, Qwen3 reranker on the first 30)
+"""Scores for the outline-routing experiment, on the sampled contracts, at reading budgets of 6,000 and 12,000 characters.
+   search      the cuad-retrieval experiment's best search (500-character passages, Qwen3 embedder, Qwen3 reranker on the first 30)
    outline     read the parts the model named from the outline (4 or 8 parts of 1,500 characters)
    within      the best search, limited to passages inside the 8 parts the model named
    fused       the best search's order and the outline's order merged (reciprocal rank fusion)

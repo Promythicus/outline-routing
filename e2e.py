@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""The outline, end to end, on experiment 01's ten pilot contracts and all their questions.
+"""The outline, end to end, on the cuad-retrieval experiment's ten pilot contracts and all their questions.
    python e2e.py prep     label the contracts' parts and route every question (model up)
    python e2e.py orders   what each method would read (embedder and reranker; model down)
    python e2e.py run <fused12|fused24|parts4|parts8>   ask the model (model up)

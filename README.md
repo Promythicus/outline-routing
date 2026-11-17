@@ -1,4 +1,4 @@
-# 02. Routing by an outline of the contract
+# Routing by an outline of the contract
 
 **Promythicus research.** Write-up for a general reader: [promythicus.com/blog/contract-outline-beats-search-local-ai-test/](https://promythicus.com/blog/contract-outline-beats-search-local-ai-test/)
 
@@ -12,7 +12,7 @@ table of contents; CUAD contracts mostly have none (half have fewer than five de
 
 **What is tested instead (no training).** The model writes a one-line label for each 1,500-character
 part of a contract (an induced outline); for a question it is shown the outline and names the parts
-to read. Compared, at the same reading budgets as experiment 01, with that experiment's best search
+to read. Compared, at the same reading budgets as the cuad-retrieval experiment, with that experiment's best search
 (500-character passages, Qwen3-Embedding-0.6B, Qwen3-Reranker-0.6B), alone and combined.
 
 **Data.** CUAD v1 test split from `../cuad-retrieval/data`; a fixed sample of 30 of the 102
@@ -20,7 +20,7 @@ contracts (seed 7), every question that has an answer.
 
 **Files.** `outline.py` (label / route, needs the model on :8081), `evalr.py` (scores), `run.sh`, `out/`.
 
-Model named in public only as in experiment 01's README.
+Model named in public only as in the cuad-retrieval experiment's README.
 
 ## Results (2026-11-15)
 
@@ -29,7 +29,7 @@ clauses). hit = a part of an answer is in what is read; span = share of marked c
 
 | What is read | hit 6k | span 6k | hit 12k | span 12k |
 |---|---|---|---|---|
-| best search of experiment 01 | 86.6 | 69.8 | 93.3 | 81.0 |
+| best search of the cuad-retrieval experiment | 86.6 | 69.8 | 93.3 | 81.0 |
 | outline: the parts the model names (4 / 8 parts of 1,500) | 90.9 | 81.5 | 93.9 | 86.3 |
 | search inside the named parts only | 89.8 | 77.9 | 93.3 | 86.0 |
 | search and outline fused (RRF) | 92.8 | 81.1 | 96.5 | 89.5 |
@@ -39,7 +39,7 @@ clauses). hit = a part of an answer is in what is read; span = share of marked c
 Labelling the 1,318 parts took 1,255 s (about 42 s a contract, once); naming the parts 1.32 s a question
 (6.6 parts named on average).
 
-**End to end** (`e2e.py`, `out/e2e_scores.json`; experiment 01's ten pilot contracts, 410 questions, 248
+**End to end** (`e2e.py`, `out/e2e_scores.json`; the cuad-retrieval experiment's ten pilot contracts, 410 questions, 248
 marked clauses, same model, same scoring). Rows marked 01 are that experiment's.
 
 | Way of reading | right passage read | clauses quoted | "is there such a clause" F1 | quotes word for word | tokens read | s/question |
